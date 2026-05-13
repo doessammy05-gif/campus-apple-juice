@@ -16,7 +16,7 @@ export function Footer() {
         {/* Final CTA Section */}
         <div className="flex flex-col items-center text-center mb-24 gap-8">
           <h2 className="text-5xl md:text-8xl font-bold leading-tight font-heading">
-            Ready to <span className="text-primary italic">Fuel Up?</span
+            Ready to <span className="text-primary italic">Fuel Up?</span>
           </h2>
           <p className="text-xl text-white/70 max-w-2xl">
             Join 2,000+ students who've upgraded their study game. First bottle is 50% off for new campus accounts.
