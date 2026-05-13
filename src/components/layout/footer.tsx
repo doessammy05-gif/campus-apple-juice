@@ -1,7 +1,6 @@
 'use client'
 
-import { ShoppingCart, Instagram, Twitter, Facebook } from 'lucide-react'
-import { ArrowRight } from 'lucide-react'
+import { ShoppingCart, Instagram, Twitter, Facebook, ArrowRight } from 'lucide-react'
 
 export function Footer() {
   return (
