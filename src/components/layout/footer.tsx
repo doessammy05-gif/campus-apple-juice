@@ -1,6 +1,7 @@
 'use client'
 
-import { ShoppingCart, Instagram, Twitter, Facebook, ArrowRight } from 'lucide-react'
+import { ShoppingCart, Camera, Share2, Users } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -44,13 +45,13 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors cursor-pointer">
-                <Instagram className="w-5 h-5" />
+                <Camera className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors cursor-pointer">
-                <Twitter className="w-5 h-5" />
+                <Share2 className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors cursor-pointer">
-                <Facebook className="w-5 h-5" />
+                <Users className="w-5 h-5" />
               </a>
             </div>
           </div>
