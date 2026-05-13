@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 const righteous = Righteous({
-  weight: ["400", "700"],
+  weight: ["400"],
   subsets: ["latin"],
   variable: "--font-righteous",
 });

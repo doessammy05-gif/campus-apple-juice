@@ -2,7 +2,6 @@
 
 import { SplineScene } from '@/components/ui/spline-scene'
 import { Spotlight } from '@/components/ui/spotlight'
-import { Button } from 'lucide-react' // We will use lucide for icons, not a Button component
 import { ArrowRight, ShoppingCart } from 'lucide-react'
 import { motion } from 'framer-motion'
 

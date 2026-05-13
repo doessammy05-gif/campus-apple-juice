@@ -16,7 +16,7 @@ export function Footer() {
         {/* Final CTA Section */}
         <div className="flex flex-col items-center text-center mb-24 gap-8">
           <h2 className="text-5xl md:text-8xl font-bold leading-tight font-heading">
-            Ready to <span className="text-primary italic">Fuel Up?</span>
+            Ready to <span className="text-primary italic">Fuel Up?</span
           </h2>
           <p className="text-xl text-white/70 max-w-2xl">
             Join 2,000+ students who've upgraded their study game. First bottle is 50% off for new campus accounts.
@@ -90,8 +90,8 @@ export function Footer() {
         <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-xs">
           <p>© {new Date().getFullYear()} CampusAppleJuice. All rights reserved.</p>
           <p>Crafted with 🍎 for the students of the world.</p>
-        </div_ la
+        </div>
       </div>
-    </footer
+    </footer>
   )
 }
