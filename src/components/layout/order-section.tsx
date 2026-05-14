@@ -36,7 +36,7 @@ export function OrderSection() {
                   <div key={i} className="flex items-center gap-3 text-text-brand font-medium">
                     <div className="p-1 bg-primary text-white rounded-full">
                       <CheckCircle size={16} />
-                    </div}
+                    </div>
                     {item}
                   </div>
                 ))}
