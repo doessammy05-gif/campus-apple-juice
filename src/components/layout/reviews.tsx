@@ -39,7 +39,7 @@ export function ReviewsSection() {
             <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
               Campus <span className="text-primary">Favorites</span>
             </h2>
-            <p className="text-lg text-text-brand/80 max-w-2xl mx-auto">
+            <p className="text-lg text-text-brand max-w-2xl mx-auto">
               See why students across campus are swapping coffee for the natural power of apple juice.
             </p>
           </div>
@@ -98,7 +98,7 @@ export function ReviewsSection() {
                     />
                     <div>
                       <p className="font-bold text-text-brand">{review.name}</p>
-                      <p className="text-sm text-text-brand/80">{review.role}</p>
+                      <p className="text-sm text-text-brand">{review.role}</p>
                     </div>
                   </div>
                 </div>

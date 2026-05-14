@@ -66,7 +66,7 @@ export function FeatureBento() {
             <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
               Why <span className="text-primary">CampusApple?</span>
             </h2>
-            <p className="text-lg text-text-brand/80 max-w-2xl mx-auto">
+            <p className="text-lg text-text-brand max-w-2xl mx-auto">
               The perfect balance of health, energy, and convenience tailored for the student hustle.
             </p>
           </div>
@@ -111,7 +111,7 @@ export function FeatureBento() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold text-text-brand">{feature.title}</h3>
-                  <p className="text-text-brand/80 leading-relaxed">
+                  <p className="text-text-brand leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

@@ -41,7 +41,7 @@ export function JourneySection() {
             <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
               The <span className="text-primary">Journey</span>
             </h2>
-            <p className="text-lg text-text-brand/80 max-w-xl">
+            <p className="text-lg text-text-brand max-w-xl">
               From the branch to your bottle. We don't cut corners, we just press them.
             </p>
           </div>
@@ -71,7 +71,7 @@ export function JourneySection() {
                   {step.icon}
                 </div>
                 <h3 className="text-4xl font-bold text-text-brand">{step.title}</h3>
-                <p className="text-xl text-text-brand/80 leading-relaxed">
+                <p className="text-xl text-text-brand leading-relaxed">
                   {step.description}
                 </p>
               </div>

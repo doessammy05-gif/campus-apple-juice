@@ -23,7 +23,7 @@ export function OrderSection() {
               <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
                 Get It <span className="text-primary">Now.</span>
               </h2>
-              <p className="text-xl text-text-brand/80 leading-relaxed">
+              <p className="text-xl text-text-brand leading-relaxed">
                 Freshly pressed apple juice, delivered to your exact coordinates. No more fighting for vending machine space.
               </p>
 
