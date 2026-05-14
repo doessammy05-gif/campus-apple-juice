@@ -35,7 +35,7 @@ export function Hero() {
           </FadeIn>
 
           <FadeIn delay={0.3}>
-            <p className="text-lg md:text-xl text-text-brand/70 max-w-lg leading-relaxed font-light">
+            <p className="text-lg md:text-xl text-text-brand/90 max-w-lg leading-relaxed font-light">
               Sourced from the crispest orchards and delivered straight to your dorm.
               The natural spark you need to conquer that 8 AM lecture.
             </p>

@@ -55,7 +55,7 @@ export function FlavorPicker() {
           <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
             Pick Your <span className="text-primary">Vibe</span>
           </h2>
-          <p className="text-lg text-text-brand/60 max-w-2xl mx-auto">
+          <p className="text-lg text-text-brand/80 max-w-2xl mx-auto">
             Every student is different. Choose the flavor that matches your current hustle.
           </p>
         </div>
@@ -135,7 +135,7 @@ export function FlavorPicker() {
                   </div>
 
                   <h3 className="text-xl font-bold text-text-brand mb-2">{flavor.name}</h3>
-                  <p className="text-text-brand/60 text-sm leading-relaxed mb-4">
+                  <p className="text-text-brand/80 text-sm leading-relaxed mb-4">
                     {flavor.description}
                   </p>
 

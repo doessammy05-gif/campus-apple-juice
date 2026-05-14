@@ -21,7 +21,7 @@ export function Footer() {
             <h2 className="text-5xl md:text-8xl font-bold leading-tight font-heading">
               Ready to <span className="text-primary italic">Fuel Up?</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl">
+            <p className="text-xl text-white/90 max-w-2xl">
               Join 2,000+ students who've upgraded their study game. First bottle is 50% off for new campus accounts.
             </p>
             <motion.button
@@ -51,7 +51,7 @@ export function Footer() {
                 CampusApple
               </span>
             </div>
-            <p className="text-white/60 text-sm leading-relaxed">
+            <p className="text-white/80 text-sm leading-relaxed">
               Bringing nature's best energy to the heart of campus life. Fresh, cold-pressed, and fast.
             </p>
             <div className="flex gap-4">
@@ -81,7 +81,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-lg font-bold mb-6 font-heading">Product</h4>
-            <ul className="flex flex-col gap-4 text-white/60 text-sm">
+            <ul className="flex flex-col gap-4 text-white/80 text-sm">
               <li className="group">
                 <motion.a
                   href="#"
@@ -123,7 +123,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-lg font-bold mb-6 font-heading">Company</h4>
-            <ul className="flex flex-col gap-4 text-white/60 text-sm">
+            <ul className="flex flex-col gap-4 text-white/80 text-sm">
               <li className="group">
                 <motion.a
                   href="#"
@@ -165,7 +165,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-lg font-bold mb-6 font-heading">Support</h4>
-            <ul className="flex flex-col gap-4 text-white/60 text-sm">
+            <ul className="flex flex-col gap-4 text-white/80 text-sm">
               <li className="group">
                 <motion.a
                   href="#"
@@ -206,7 +206,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-xs">
+        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-white/60 text-xs">
           <p>© {new Date().getFullYear()} CampusAppleJuice. All rights reserved.</p>
           <p>Crafted with 🍎 for the students of the world.</p>
         </div>

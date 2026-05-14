@@ -42,7 +42,7 @@ export function SpotSelector({ onSave }: { onSave: (spot: string) => void }) {
           Location
         </div>
         <h3 className="text-3xl font-bold text-text-brand">Where should we drop it?</h3>
-        <p className="text-text-brand/60">Select your usual study spot for faster deliveries.</p>
+        <p className="text-text-brand/80">Select your usual study spot for faster deliveries.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
@@ -61,7 +61,7 @@ export function SpotSelector({ onSave }: { onSave: (spot: string) => void }) {
           >
             <div className="flex flex-col gap-1">
               <span className="font-bold text-text-brand">{spot.name}</span>
-              <span className="text-xs text-text-brand/60">{spot.description}</span>
+              <span className="text-xs text-text-brand/80">{spot.description}</span>
             </div>
             {selected === spot.id && (
               <div className="p-1 bg-primary text-white rounded-full">
@@ -73,7 +73,7 @@ export function SpotSelector({ onSave }: { onSave: (spot: string) => void }) {
       </div>
 
       <div className="flex items-center justify-between gap-4">
-        <div className="text-sm text-text-brand/60">
+        <div className="text-sm text-text-brand/80">
           {savedSpot
             ? `Saved: ${CAMPUS_SPOTS.find(s => s.id === savedSpot)?.name}`
             : 'No spot saved yet'}
