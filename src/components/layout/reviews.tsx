@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Star, Quote } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
+import { FadeIn } from '@/components/ui/fade-in'
 
 const REVIEWS = [
   {
@@ -33,23 +34,39 @@ export function ReviewsSection() {
   return (
     <section id="reviews" className="py-24 bg-white overflow-hidden">
       <div className="container max-w-7xl mx-auto px-6">
-        <div className="flex flex-col gap-4 mb-16 text-center">
-          <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
-            Campus <span className="text-primary">Favorites</span>
-          </h2>
-          <p className="text-lg text-text-brand/60 max-w-2xl mx-auto">
-            See why students across campus are swapping coffee for the natural power of apple juice.
-          </p>
-        </div>
+        <FadeIn>
+          <div className="flex flex-col gap-4 mb-16 text-center">
+            <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
+              Campus <span className="text-primary">Favorites</span>
+            </h2>
+            <p className="text-lg text-text-brand/60 max-w-2xl mx-auto">
+              See why students across campus are swapping coffee for the natural power of apple juice.
+            </p>
+          </div>
+        </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={{
+            show: {
+              transition: {
+                staggerChildren: 0.2
+              }
+            }
+          }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           {REVIEWS.map((review, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              viewport={{ once: true }}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+              }}
+              whileHover={{ y: -10 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <Card className="h-full p-8 bg-background-brand border-none shadow-xl relative group hover:shadow-2xl transition-all duration-300 cursor-pointer">
                 <div className="absolute top-[-20px] right-8 text-primary/20 group-hover:text-primary/40 transition-colors">
@@ -88,7 +105,7 @@ export function ReviewsSection() {
               </Card>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

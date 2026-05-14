@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Zap, Truck, Leaf, Award, Clock, Flame } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
+import { FadeIn } from '@/components/ui/fade-in'
 
 const FEATURES = [
   {
@@ -60,20 +61,39 @@ export function FeatureBento() {
   return (
     <section id="features" className="py-24 bg-background-brand">
       <div className="container max-w-7xl mx-auto px-6">
-        <div className="flex flex-col gap-4 mb-16 text-center">
-          <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
-            Why <span className="text-primary">CampusApple?</span>
-          </h2>
-          <p className="text-lg text-text-brand/60 max-w-2xl mx-auto">
-            The perfect balance of health, energy, and convenience tailored for the student hustle.
-          </p>
-        </div>
+        <FadeIn>
+          <div className="flex flex-col gap-4 mb-16 text-center">
+            <h2 className="text-5xl md:text-7xl font-bold text-text-brand leading-tight">
+              Why <span className="text-primary">CampusApple?</span>
+            </h2>
+            <p className="text-lg text-text-brand/60 max-w-2xl mx-auto">
+              The perfect balance of health, energy, and convenience tailored for the student hustle.
+            </p>
+          </div>
+        </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px]">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={{
+            show: {
+              transition: {
+                staggerChildren: 0.1
+              }
+            }
+          }}
+          className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px]"
+        >
           {FEATURES.map((feature, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.02 }}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+              }}
+              whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
+              whileTap={{ scale: 0.98 }}
               className={cn(
                 "group cursor-pointer",
                 feature.size
@@ -84,7 +104,7 @@ export function FeatureBento() {
                 feature.bg
               )}>
                 <div className={cn(
-                  "w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:rotate-12",
+                  "w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110",
                   feature.color
                 )}>
                   <feature.icon className="w-6 h-6" />
@@ -98,7 +118,7 @@ export function FeatureBento() {
               </Card>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
