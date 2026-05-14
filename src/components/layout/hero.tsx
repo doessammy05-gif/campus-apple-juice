@@ -28,9 +28,9 @@ export function Hero() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <h1 className="text-6xl md:text-8xl font-bold text-text-brand leading-[0.9] tracking-tighter">
+            <h1 className="text-6xl md:text-8xl font-bold text-white leading-[0.9] tracking-tighter">
               Freshness <br />
-              <span className="text-primary italic">Unbottled.</span>
+              <span className="text-white italic">Unbottled.</span>
             </h1>
           </FadeIn>
 
