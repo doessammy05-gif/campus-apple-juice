@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 const CAMPUS_SPOTS = [
   { id: 'lib-north', name: 'Library North', description: 'Quiet study zone, near the archives.' },
   { id: 'student-union', name: 'Student Union', description: 'The heart of campus, near the food court.' },
-  { id: 'sci-quad', name: 'Science Quad', description idea="Lab-side delivery, perfect for long experiments." },
+  { id: 'sci-quad', name: 'Science Quad', description: 'Lab-side delivery, perfect for long experiments.' },
   { id: 'north-dorms', name: 'North Dorms', description: 'Right at your door, no walk required.' },
   { id: 'arts-wing', name: 'Arts Wing', description: 'Creative corner, near the sculpture garden.' },
   { id: 'sports-complex', name: 'Sports Complex', description: 'Fuel up after a workout or a game.' },
