@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { Check } from 'lucide-react'
+import { WindowContainer } from '@/components/ui/window-container'
 
 const FLAVORS = [
   {
@@ -59,7 +60,8 @@ export function FlavorPicker() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <WindowContainer>
+          <div className="grid lg:grid-cols-2 gap-16 items-center p-4">
           {/* Visual Preview Area */}
           <div className="relative aspect-square flex items-center justify-center">
             <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-full scale-75" />
@@ -145,7 +147,7 @@ export function FlavorPicker() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </WindowContainer>
       </div>
     </section>
   )
